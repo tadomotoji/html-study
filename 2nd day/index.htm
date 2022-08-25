@@ -40,7 +40,7 @@ function drop(ev) {
 <hr>
 
 
-<iframe width="887" height="499" src="https://www.youtube.com/embed/7fH62D5qPsg?autoplay=1&mute=1&controls=0" frameborder="0"></iframe>
+<iframe width="887" height="499" src="https://www.youtube.com/embed/7fH62D5qPsg?mute=1&controls=0" frameborder="0"></iframe>
 
 <hr>
 <h2>media</h2>
@@ -48,6 +48,7 @@ function drop(ev) {
   <source src="" type="video/mp4">
   Do not support.
 </video>
+<!--
 <hr>
 <h2>drag and drop</h2>
 <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -60,7 +61,40 @@ function drop(ev) {
   <img src="Picture/Luong2.jpg" draggable="true" ondragstart="drag(event)" id="drag5">
 </div>
 </div>
+<br>
+-->
+<hr>
+<h2>testing js</h2>
 
+<script>
+  function swap(){
+    var a,b,c;
+    a=Number(document.getElementById("numa").value);
+    b=Number(document.getElementById("numb").value);
+    c=a;
+    a=b;
+    b=c;
+    document.getElementById("numa").value=a;
+    document.getElementById("numb").value=b;
+  }
+</script>
+  Value of a: <input id="numa">
+  Value of b: <input id="numb"><br>
+  <button onclick="swap()">Swap</button>
+<script>
+  function fibonnacci(f){
+    if (f==1) return 1;
+    if (f==2) return 1;
+    return fibonnacci(f-1)+fibonnacci(f-2);
+  }
+  function getF(){
+    document.getElementById("fibonnacci").value=Number(fibonacci(15))
+  }
+</script>
+
+<p> fibonacci of 15 is: </p>
+<p id="fibonacci"></p>
+<button onclick="getF()">Result</button>
 
 </body>
 </html>
