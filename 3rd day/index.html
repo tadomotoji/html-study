@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Testjs</title>
+</head>
+<body>
+    <p>the 30th fibonacci number is: </p>
+    <p id="fibonacciRes"></p>
+    <script type="module">
+        import fibonacci from "./js/export.js";
+        document.getElementById("fibonacciRes").innerHTML = fibonacci(30);
+    </script>
+    
+
+</body>

@@ -3,14 +3,14 @@
 <head>
     <title>Testjs</title>
     <script>
-        function fibonnacci(f){
+        function fibonacci(f){
           if (f<=2) {return 1;}
-          else {return fibonnacci(f-1)+fibonnacci(f-2);}
+          else {return fibonacci(f-1)+fibonacci(f-2);}
         }
       </script>
 </head>
 <body>
-    <p>the 15th fibonnacci number is: </p>
-    <p id="fibonnacciRes"></p>
-    <script>document.getElementById("fibonnacciRes").innerHTML=fibonnacci(15)</script>
+    <p>the 30th fibonacci number is: </p>
+    <p id="fibonacciRes"></p>
+    <script>document.getElementById("fibonacciRes").innerHTML=fibonacci(29)</script>
 </body>
