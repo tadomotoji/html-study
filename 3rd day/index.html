@@ -2,14 +2,32 @@
 <html>
 <head>
     <title>Testjs</title>
+    <style>
+        .header{
+            width:100%;
+            height:100vh;
+            background-image:url(Tran.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .header:hover{
+            background-image:url(ProfilePicturePhoto.jpg);
+        }
+        .header:active{
+            background-image: linear-gradient(rgb(255,155,0),rgb(222,40,9));
+        }
+    </style>
 </head>
 <body>
+    <div class="header">
+    </div>
     <p>the 30th fibonacci number is: </p>
-    <p id="fibonacciRes"></p>
-    <script type="module">
-        import fibonacci from "./js/export.js";
-        document.getElementById("fibonacciRes").innerHTML = fibonacci(30);
-    </script>
+        <p id="fibonacciRes"></p>
+        <script type="module">
+            import fibonacci from "./js/export.js";
+            document.getElementById("fibonacciRes").innerHTML = fibonacci(30);
+        </script>
+        <img src="ProfilePicturePhoto.jpg" style="padding:3px;border:3px solid purple;">
     
-
 </body>
