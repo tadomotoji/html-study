@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Testjs</title>
+    <title>Day3</title>
     <style>
         .header{
             height:100vh;
@@ -10,7 +10,6 @@
             background-repeat: no-repeat;
             background-position: top center;
             position:relative;
-
         }
         .header:hover{
             background-image:url(ProfilePicturePhoto.jpg);
@@ -40,18 +39,24 @@
             left:0;
             font-size: 300%;
             text-align: center;
+            z-index: 1;
         }
-        ul{
+        /* ul{
             height:1000px;
+        } */
+        ul.testImglist{
+            list-style-image: url(ProfilePicturePhoto.jpg);
+        }
+        ol{
+            list-style-type: ;
         }
     </style>
 </head>
 <body>
-    
+    <div class="menu">This is a menu</div>
     <div class="header">
         <img id="testimg" src="Tran.jpg" style="padding:3px;border:3px solid purple;"> 
     </div>
-    <div class="menu">This is a menu</div>
     <p>the 30th fibonacci number is: </p>
         <p id="fibonacciRes"></p>
         <script type="module">
@@ -60,6 +65,15 @@
         </script>
     <ul></ul>
     </ul>
-        
+    <p style="text-decoration-line: line-through">Hello, this line is line-through</p>
+    <p style="letter-spacing: 5px;">what the heck is that</p>
+    <p style="word-spacing: 5px;">what the heck is that</p>
+    <p style="color:purple;font-size: 50px;text-shadow: 3px 3px 4px yellow;">Decoration CSS testing</p>
+    <ul class="testImglist">
+        <li>Me1</li>
+        <li>Me2</li>
+        <li>Me3</li>
+    </ul>
     
+</body>
 </body>
