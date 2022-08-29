@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<style>
+    .dropdown-button {
+        background-color: orange;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border:none;
+        cursor: pointer;
+    }
+    .Ttransition{
+        width: 100px;
+        height: 100px;
+        background: green;
+        transition: width 2s;
+    }
+    .Ttransition:hover{
+        width: 300px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        /* right:0; */
+    }
+    .dropdown-content a {
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: grey;
+    }
+    .dropdown:hover .dropdown-content  {
+        display: block;
+    }
+    .dropdown:hover .dropdown-button{
+        background-color: orangered;
+    }
+</style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdown-button">About me</button>
+        <div class="dropdown-content">
+            <a href="https://www.facebook.com/thienluong.tranhuu.9/" target="_blank">My FB</a>
+            <a href="https://www.instagram.com/thienluong67/" target="_blank">My Instagram</a>
+        </div>
+    </div>
+    <div class="Ttransition"></div>
+</body>
