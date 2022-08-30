@@ -10,23 +10,61 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
 <body>
     <div class="app">
         <header class="header">
+           <div class="grid">
             <nav class="header__navbar">
-                <ul class="header__navbar_list">
-                    <li class="header__navbar__item">Vào cửa hàng trên ứng dụng</li>
-                    <li class="header__navbar__item">Kết nối</li>
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item header__navbar__item--qrhover header__navbar__item--split" >
+                        Vào cửa hàng trên ứng dụng
+                        <div class="header__qrcode">
+                            <img src="./assets/img/QR-code.png" alt="QR-code" class="header__qr-img">
+                            <div class="header__qrdownload">
+                                <a href="" class="header__qrdownload-link">
+                                    <img src="./assets/img/google_play.png" alt="google_play" class="QR-store">
+                                </a>
+                                <a href="" class="header__qrdownload-link">
+                                <img src="./assets/img/app_store.png" alt="app_store" class="QR-store">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar__item">
+                        <span class="header__navbar__item--no-pointer">Kết nối</span>
+                        <a href="" class="header__navbar__icon">
+                            <i class="header__navbar__icon-logo fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar__icon">
+                            <i class="header__navbar__icon-logo fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="header__navbar__list">
-                    <li class="header__navbar__item">Thông báo</li>
-                    <li class="header__navbar__item">Trợ giúp</li>
-                    <li class="header__navbar__item">Đăng nhập</li>
-                    <li class="header__navbar__item">Đăng ký</li>
+                    <li class="header__navbar__item">
+                        <a href="#" class="header__navbar__link">
+                            <i class="header__navbar__icon-logo fa-solid fa-bell"></i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="#" class="header__navbar__link">
+                            <i class="header__navbar__icon-logo fa-solid fa-circle-question"></i>
+                            Trợ giúp
+                        </a>
+                    </li>
+                    <li class="header__navbar__item header__navbar__item--bold header__navbar__item--split">
+                        Đăng ký
+                    </li>
+                    <li class="header__navbar__item header__navbar__item--bold">
+                        Đăng nhập
+                    </li>
                 </ul>
             </nav>
+           </div>
         </header>
         
         <div class="container">
