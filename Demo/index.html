@@ -109,11 +109,42 @@
                     <img src="./assets/img/tiki-logo.png" alt="logo" class="header__logo-img">
                 </div>
                 <div class="header__search">
-                    <input type="text" class="header__search_bar" placeholder="Tìm kiếm sản phẩm">
-                    <span class="header_search_bar-select">Trong shop</span>
+                    <div class="header__search_bar-wrap">
+                        <input type="text" class="header__search_bar" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search_hitory">
+                            <h3 class="header__search_hitory-header">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search_hitory-list">
+                                <li class="header__search_hitory-item">
+                                    <a href="">Tìm kiếm thứ nhất</a>
+                                </li>
+                                <li class="header__search_hitory-item">
+                                    <a href="">Tìm kiếm thứ hai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search_select">
+                        <span class="header__search_label">Trong shop</span>
+                        <i class="header__search_icon fa-solid fa-angle-down"></i>
+                        <ul class="header__search_option">
+                            <li class="header__search_option-item header__search_option-item--active">
+                                <span>Trong shop</span>
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li class="header__search_option-item">
+                                <span>Ngoài shop</span>
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <button class="header__search_btn">
+                        <i class="header__search_btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
                 <div class="header__cart">
                     <i class="fa-solid fa-cart-shopping header__cart_icon"></i>
+                
                 </div>
 
             </div>
