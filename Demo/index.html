@@ -143,8 +143,18 @@
                     </button>
                 </div>
                 <div class="header__cart">
-                    <i class="fa-solid fa-cart-shopping header__cart_icon"></i>
-                
+                    <div class="header__cart-wrap">
+                        <i class="fa-solid fa-cart-shopping header__cart_icon"></i>
+                        <span class="header__cart-notice">3</span>
+                        <!-- no cart: header__cart-list--no-cart -->
+                        <div class="header__cart-list header__cart-list--no-cart">
+                            <img src="./assets/img/no__cart.png" alt="no cart" class="header__cart-no-cart-img">
+                            <span class="header__cart-no-cart-msg">
+                                Chưa có sản phẩm
+                            </span>
+                            <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                        </div>
+                    </div>
                 </div>
 
             </div>
